@@ -1,0 +1,227 @@
+{
+    "common": {
+        "name": "fpp",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial adapter",
+                "de": "Initiale Version",
+                "ru": "Первоначальный адаптер",
+                "pt": "Versão inicial",
+                "fr": "Version initiale",
+                "nl": "Eerste release"
+            }
+        },
+        "title": "FPP adapter",
+        "desc": {
+            "en": "ioBroker fpp Adapter",
+            "de": "ioBroker Fpp Adapter",
+            "ru": "ioBroker Fpp драйвер",
+            "pt": "Modelo de adaptador para o ioBroker",
+            "fr": "ioBroker adaptateur modèle",
+            "nl": "ioBroker Fpp Adapter"
+        },
+        "platform": "Javascript/Node.js",
+        "mode": "daemon",
+        "icon": "fpp.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/instalator/ioBroker.fpp/master/admin/fpp.png",
+        "keywords": ["fpp"],
+        "readme": "https://github.com/instalator/ioBroker.fpp/blob/master/README.md",
+        "loglevel": "info",
+        "type": "hardware"
+    },
+    "native": {
+        "host": "127.0.0.1",
+        "port": 80,
+        "login": "admin",
+        "password": ""
+    },
+    "objects": [
+
+    ],
+    "instanceObjects": [
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "If connected to FPP",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {
+            }
+        },
+        {
+            "_id": "commands.rebootPi",
+            "type": "state",
+            "common": {
+                "role": "button",
+                "name": "Reboot Raspberry Pi",
+                "type": "boolean",
+                "read": false,
+                "write": true,
+                "def": false
+            },
+            "native": {
+            }
+        },
+        {
+            "_id": "commands.shutdownPi",
+            "type": "state",
+            "common": {
+                "role": "button",
+                "name": "Shutdown Raspberry Pi",
+                "type": "boolean",
+                "read": false,
+                "write": true,
+                "def": false
+            },
+            "native": {
+            }
+        },
+        {
+            "_id": "commands.stopGracefully",
+            "type": "state",
+            "common": {
+                "role": "button",
+                "name": "stop Gracefully",
+                "type": "boolean",
+                "read": false,
+                "write": true,
+                "def": false
+            },
+            "native": {
+            }
+        },
+        {
+            "_id": "commands.stopNow",
+            "type": "state",
+            "common": {
+                "role": "button",
+                "name": "stopNow",
+                "type": "boolean",
+                "read": false,
+                "write": true,
+                "def": false
+            },
+            "native": {
+            }
+        },
+        {
+            "_id": "commands.stopFPPD",
+            "type": "state",
+            "common": {
+                "role": "button",
+                "name": "stopFPPD",
+                "type": "boolean",
+                "read": false,
+                "write": true,
+                "def": false
+            },
+            "native": {
+            }
+        },
+        {
+            "_id": "commands.startFPPD",
+            "type": "state",
+            "common": {
+                "role": "button",
+                "name": "startFPPD",
+                "type": "boolean",
+                "read": false,
+                "write": true,
+                "def": false
+            },
+            "native": {
+            }
+        },
+        {
+            "_id": "commands.restartFPPD",
+            "type": "state",
+            "common": {
+                "role": "button",
+                "name": "restartFPPD",
+                "type": "boolean",
+                "read": false,
+                "write": true,
+                "def": false
+            },
+            "native": {
+            }
+        },
+        {
+            "_id": "commands.toggleSequencePause",
+            "type": "state",
+            "common": {
+                "role": "button",
+                "name": "toggleSequencePause",
+                "type": "boolean",
+                "read": false,
+                "write": true,
+                "def": false
+            },
+            "native": {
+            }
+        },
+        {
+            "_id": "commands.singleStepSequence",
+            "type": "state",
+            "common": {
+                "role": "button",
+                "name": "singleStepSequence",
+                "type": "boolean",
+                "read": false,
+                "write": true,
+                "def": false
+            },
+            "native": {
+            }
+        },
+        {
+            "_id": "commands.singleStepSequenceBack",
+            "type": "state",
+            "common": {
+                "role": "button",
+                "name": "singleStepSequenceBack",
+                "type": "boolean",
+                "read": false,
+                "write": true,
+                "def": false
+            },
+            "native": {
+            }
+        },
+        {
+            "_id": "commands.startPlaylist",
+            "type": "state",
+            "common": {
+                "role": "state",
+                "name": "startPlaylist",
+                "type": "string",
+                "read": false,
+                "write": true,
+                "def": false
+            },
+            "native": {
+            }
+        },
+        {
+            "_id": "commands.repeat",
+            "type": "state",
+            "common": {
+                "role": "state",
+                "name": "repeat Playlist",
+                "type": "boolean",
+                "read": false,
+                "write": true,
+                "def": false
+            },
+            "native": {
+            }
+        }
+    ]
+}
